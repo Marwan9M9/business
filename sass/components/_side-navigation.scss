@@ -1,0 +1,75 @@
+.side-navigation {
+  background: $color-white;
+  height: 100vh;
+  overflow: hidden;
+
+  &_header {
+    color: $color-main-1;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+  }
+
+  &_user {
+    a {
+      text-decoration: none;
+      display: inline-block;
+
+      .user-img {
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+      }
+
+      .user-name {
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 1.7rem;
+        color: $color-black;
+      }
+    }
+  }
+
+  &_list {
+    .list-group,
+    .list-page {
+      .list-item {
+        padding: 15px 0;
+        transition: all .3s;
+
+        &:hover {
+          background: $color-main-2;
+
+          .list-link {
+            color: $color-main-1;
+          }
+        }
+
+        .list-link:link,
+        .list-link:visited {
+          display: inline-block;
+          color: $color-black;
+          text-decoration: none;
+          transition: all .3s;
+
+          .list-icon {
+            font-size: 2rem;
+            display:  inline-block;
+            margin-left: 10px;
+          }
+        }
+
+        .notifications-count,
+        .messages-count {
+          background: $color-main-1;
+          border-radius: 50%;
+          padding: 0.2rem .8rem;
+          color: $color-white;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+
+}

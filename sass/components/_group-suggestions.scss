@@ -1,0 +1,22 @@
+.group-suggestions-section,
+.page-suggestions-section {
+  background: $color-white;
+
+  .heading-secondary {
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+  .card {
+    border-radius: 4px;
+    box-shadow: 0 3px $color-light-grey-2;
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
